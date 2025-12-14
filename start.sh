@@ -1,3 +1,3 @@
 python manage.py collectstatic --noinput
-pytohn manage.py migrate --noinput
+python manage.py migrate
 gunicorn Ecommerce.wsgi:application --bind 0.0.0.0:10000
